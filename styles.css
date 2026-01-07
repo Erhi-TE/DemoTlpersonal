@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #222;
+  background: #f5f7fa;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #ff7a18;
+  color: white;
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECTION */
+.section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  margin-bottom: 25px;
+}
+
+/* ACCORDION */
+.accordion-header {
+  width: 100%;
+  padding: 16px;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
+  transition: max-height 0.4s ease;
+  padding: 0 16px;
+}
+
+.accordion-content p {
+  padding: 16px 0;
+}
+
+/* IMAGE SECTION */
+.image-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.image-section img {
+  width: 50%;
+  border-radius: 16px;
+}
+
+.image-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
