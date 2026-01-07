@@ -6,13 +6,14 @@
 
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
-  color: #222;
-  background: #f5f7fa;
+  color: #1f2933;
+  background: #f4f6f8;
+  line-height: 1.6;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 90vh;
   background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
     url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
   background-size: cover;
@@ -25,7 +26,7 @@ body {
 .hero-content {
   text-align: center;
   color: white;
-  max-width: 700px;
+  max-width: 800px;
   padding: 0 20px;
 }
 
@@ -35,39 +36,63 @@ body {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-bottom: 30px;
 }
 
 .btn {
-  background: #ff7a18;
+  background: #2563eb;
   color: white;
-  padding: 14px 34px;
+  padding: 14px 36px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* SECTION */
 .section {
   max-width: 900px;
-  margin: 80px auto;
+  margin: 90px auto;
   padding: 0 20px;
 }
 
 .section h2 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+/* IMAGE TEXT */
+.image-text {
+  max-width: 1100px;
+  margin: 90px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 50px;
+}
+
+.image-text.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-text img {
+  width: 50%;
+  border-radius: 18px;
+}
+
+.image-text div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ACCORDION */
 .accordion-header {
   width: 100%;
-  padding: 16px;
+  padding: 18px;
   background: white;
   border: none;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
   cursor: pointer;
   text-align: left;
 }
@@ -76,31 +101,11 @@ body {
   max-height: 0;
   overflow: hidden;
   background: white;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: max-height 0.4s ease;
-  padding: 0 16px;
+  padding: 0 18px;
 }
 
 .accordion-content p {
-  padding: 16px 0;
-}
-
-/* IMAGE SECTION */
-.image-section {
-  max-width: 1000px;
-  margin: 80px auto;
-  padding: 0 20px;
-  display: flex;
-  gap: 40px;
-}
-
-.image-section img {
-  width: 50%;
-  border-radius: 16px;
-}
-
-.image-section div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 18px 0;
 }
