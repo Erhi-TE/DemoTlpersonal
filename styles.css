@@ -1,80 +1,86 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: "Segoe UI", system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
   background: #f4f6f8;
   color: #1f2933;
-  line-height: 1.6;
 }
 
-/* HERO */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: white;
+}
+
+.logo { font-weight: 600; }
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.btn-nav {
+  background: #2563eb;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
 .hero {
   height: 85vh;
-  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1580281657521-6c9f1c4a0c12");
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+  url("https://images.unsplash.com/photo-1580281657521-6c9f1c4a0c12");
   background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero-content {
-  text-align: center;
   color: white;
-  max-width: 800px;
-  padding: 0 20px;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  margin-bottom: 30px;
+  text-align: center;
+  max-width: 700px;
 }
 
 .btn {
   background: #2563eb;
   color: white;
-  padding: 14px 36px;
+  padding: 14px 32px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
+  display: inline-block;
+  margin-top: 20px;
 }
 
-/* SECTION */
 .section {
   max-width: 900px;
   margin: 90px auto;
   padding: 0 20px;
 }
 
-.section h2 {
-  margin-bottom: 30px;
+.image-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-/* ACCORDION */
+.image-text img {
+  width: 100%;
+  border-radius: 20px;
+}
+
 .accordion-header {
   width: 100%;
-  padding: 18px 20px;
-  background: white;
+  padding: 18px;
   border: none;
   border-radius: 14px;
-  margin-bottom: 14px;
+  background: white;
+  margin-bottom: 10px;
   font-weight: 600;
   cursor: pointer;
-  text-align: left;
-  transition: background 0.3s ease;
-}
-
-.accordion-header:hover {
-  background: #eef2ff;
 }
 
 .accordion-content {
@@ -82,7 +88,7 @@ body {
   overflow: hidden;
   background: white;
   border-radius: 14px;
-  padding: 0 20px;
+  padding: 0 18px;
   transition: max-height 0.4s ease;
 }
 
@@ -90,14 +96,27 @@ body {
   padding: 18px 0;
 }
 
-/* TRUST */
-.trust {
+.cta {
   background: white;
-  padding: 60px 30px;
-  border-radius: 20px;
+  padding: 80px 20px;
+  text-align: center;
 }
 
-/* FOOTER */
+.form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form input, .form textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
 .footer {
   text-align: center;
   padding: 30px;
