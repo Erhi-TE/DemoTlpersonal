@@ -127,3 +127,13 @@ body {
   font-size: 0.9rem;
   color: #555;
 }
+
+.btn-nav {
+  background-color: #2563eb;
+  color: #ffffff !important;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
