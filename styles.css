@@ -29,10 +29,14 @@ body {
 }
 
 .hero {
-  height: 85vh;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-  url("https://images.unsplash.com/photo-1580281657521-6c9f1c4a0c12");
+  height: 90vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1584515933487-779824d29309");
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
