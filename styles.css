@@ -28,6 +28,9 @@ body {
   border-radius: 20px;
 }
 
+.btn-nav:hover {
+  background-color: #1e4fd8;
+}
 .hero {
   height: 90vh;
   background: linear-gradient(
